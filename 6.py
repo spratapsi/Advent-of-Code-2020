@@ -2,7 +2,7 @@ import itertools as it
 import functools as ft
 
 def group_lines(file):
-    """Split input file into groups divided by blank lines."""
+    """Clean and group lines (divided by blank lines)."""
     clean_lines = (line.strip() for line in file)
     groups = it.groupby(clean_lines, key=bool)
     yield from (lines for is_blank, lines in groups if not is_blank)
