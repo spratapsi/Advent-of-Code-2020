@@ -12,7 +12,7 @@ def process_line(line):
     children = [(int(n), desc) for n, desc in matches]
     return parent, children
 
-with open('7.in') as file:
+with open('input/day_07.txt') as file:
     tree = dict(process_line(line) for line in file)
 
 inverted_tree = defaultdict(list)

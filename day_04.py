@@ -48,7 +48,7 @@ def records_from_file(file):
     return (join_lines(record) for record in split_records(file))
 
 
-with open('4.in') as file:
+with open('input/day_04.txt') as file:
     records = records_from_file(file)
     passports = [Passport.from_record(r) for r in records]
 

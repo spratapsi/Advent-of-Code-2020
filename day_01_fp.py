@@ -8,7 +8,7 @@ def prod(numbers):
 def first(iterable):
     return next(iter(iterable))
 
-with open('1.in') as f:
+with open('input/day_01.txt') as f:
     report = [int(n) for n in f]
 
 part1 = first(prod(nums) for nums in combs(report, 2) if sum(nums) == 2020)

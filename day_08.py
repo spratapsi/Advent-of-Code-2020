@@ -53,7 +53,7 @@ class Computer:
     }
 
 
-with open('8.in') as file:
+with open('input/day_08.txt') as file:
     input_code = (line.strip().split(' ') for line in file)
     code = [(inst, int(arg)) for inst, arg in input_code]
 
@@ -82,4 +82,4 @@ def find_stopping_computer(code):
 part2 = find_stopping_computer(code).accumulator
 
 print('Part 1:', part1)
-print('Part 1:', part2)
+print('Part 2:', part2)

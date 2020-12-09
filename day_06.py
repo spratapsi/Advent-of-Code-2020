@@ -13,7 +13,7 @@ def union(sets):
 def intersection(sets):
     return ft.reduce(set.intersection, sets)
 
-with open('6.in') as file:
+with open('input/day_06.txt') as file:
     groups = group_lines(file)
     group_answers = [[set(line) for line in group] for group in groups]
 

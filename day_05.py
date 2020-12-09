@@ -1,4 +1,4 @@
-with open('5.in') as file:
+with open('input/day_05.txt') as file:
     bpasses = (line.rstrip() for line in file)
     trans = str.maketrans('FBLR', '0101')
     seat_ids = [int(bpass.translate(trans), base=2) for bpass in bpasses]

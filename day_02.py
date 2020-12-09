@@ -15,7 +15,7 @@ class Validate:
         s = {pwd[self.n1-1], pwd[self.n2-1]}
         return self.letter in s and len(s) == 2
 
-with open('2.in') as file:
+with open('input/day_02.txt') as file:
     pattern = '(\d+)-(\d+) (\w): (\w+)'
     matches = [re.match(pattern, line).groups() for line in file]
     rules_pwds = [

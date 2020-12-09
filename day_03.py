@@ -20,7 +20,7 @@ class Grid:
 		dx, dy = step
 		return zip(count(x0, dx), range(y0, self.ymax, dy))
 
-with open('3.in') as f:
+with open('input/day_03.txt') as f:
 	grid = Grid([line.strip() for line in f])
 
 OPEN, TREE = '.#'

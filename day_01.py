@@ -1,6 +1,6 @@
 import itertools as it
 
-with open('1.in') as f:
+with open('input/day_01.txt') as f:
     report = [int(n) for n in f]
 
 # Part 1
